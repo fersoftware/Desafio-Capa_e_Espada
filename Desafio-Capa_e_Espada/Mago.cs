@@ -29,9 +29,9 @@ namespace Desafio_Capa_e_Espada
 
         public override void Atacar(ItemCombate ic)
         {
-            foreach (var item in Armamentos )
+            foreach (var item in Poderes )
             {
-                if (ic.Armamento == item)
+                if (ic.Poder == item)
                 {
                     if (pontosMagia >= ic.Poder.PontosMagia)
                     {
