@@ -40,7 +40,7 @@ namespace Desafio_Capa_e_Espada
                 }
             }
             
-            Console.WriteLine("O {0} está atacando com seu {1} causando {2} pontos de dano", Nome, ic.Armamento, ic.PontosDano);
+            Console.WriteLine("O {0} está atacando com seu {1} causando {2} pontos de dano", Nome, ic.Poder, ic.PontosDano);
         }
 
         public override void UsarItem(ItemMagico im)
