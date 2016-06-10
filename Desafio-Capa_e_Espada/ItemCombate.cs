@@ -12,11 +12,6 @@ namespace Desafio_Capa_e_Espada
         private Armamento armamento;
         private Poder poder;
 
-        public ItemCombate(int pontosDano)
-        {
-            this.PontosDano = pontosDano;
-        }
-
         public int PontosDano
         {
             get
@@ -30,7 +25,7 @@ namespace Desafio_Capa_e_Espada
             }
         }
 
-        public Armamento Armamento
+        internal Armamento Armamento
         {
             get
             {
@@ -43,7 +38,7 @@ namespace Desafio_Capa_e_Espada
             }
         }
 
-        public Poder Poder
+        internal Poder Poder
         {
             get
             {
@@ -54,6 +49,10 @@ namespace Desafio_Capa_e_Espada
             {
                 poder = value;
             }
+        }
+
+        public ItemCombate(int id, string nome) : base(id, nome)
+        {
         }
     }
 }

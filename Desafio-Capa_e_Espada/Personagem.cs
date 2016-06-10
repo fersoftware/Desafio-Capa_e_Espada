@@ -126,6 +126,19 @@ namespace Desafio_Capa_e_Espada
             }
         }
 
+        public List<ItemMagico> ItensMagicos
+        {
+            get
+            {
+                return itensMagicos;
+            }
+
+            set
+            {
+                itensMagicos = value;
+            }
+        }
+
         public Personagem(int id, string nome, int nivel, int pontosVida, int pontosExperiencia, string alinhamento)
         {
             this.Id = id;

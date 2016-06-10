@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Desafio_Capa_e_Espada
 {
-    class Poder
+    class Poder : ItemCombate
     {
         private int pontosMagia;
 
-        public Poder(int pontosMagia)
+        public Poder(int pontosDano) : base(pontosDano)
         {
-            this.PontosMagia = pontosMagia;
         }
 
         public int PontosMagia

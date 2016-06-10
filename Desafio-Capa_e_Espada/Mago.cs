@@ -45,9 +45,12 @@ namespace Desafio_Capa_e_Espada
 
         public override void UsarItem(ItemMagico im)
         {
-            foreach (var item in ItemMagico collection)
+            foreach (var item in ItensMagicos)
             {
+                if (item.ToString() == im.Nome.ToString())
+                {
 
+                }
             }
         }
 

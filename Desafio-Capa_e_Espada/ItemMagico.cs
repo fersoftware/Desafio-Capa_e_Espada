@@ -12,6 +12,10 @@ namespace Desafio_Capa_e_Espada
         private int pontosForca;
         private int pontosMagia;
 
+        public ItemMagico(int id, string nome) : base(id, nome)
+        {
+        }
+
         public int PontosVida
         {
             get
@@ -49,13 +53,6 @@ namespace Desafio_Capa_e_Espada
             {
                 pontosMagia = value;
             }
-        }
-
-        public ItemMagico(int pontosVida, int pontosForca, int pontosMagia)
-        {
-            this.PontosVida = pontosVida;
-            this.PontosForca = pontosForca;
-            this.PontosMagia = pontosMagia;
         }
     }
 }

@@ -10,9 +10,8 @@ namespace Desafio_Capa_e_Espada
     {
         private int pontosForca;
 
-        public Guerreiro(int pontosForca)
+        public Guerreiro(int id, string nome, int nivel, int pontosVida, int pontosExperiencia, string alinhamento) : base(id, nome, nivel, pontosVida, pontosExperiencia, alinhamento)
         {
-            this.PontosForca = pontosForca;
         }
 
         public int PontosForca
