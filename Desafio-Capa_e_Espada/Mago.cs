@@ -45,7 +45,10 @@ namespace Desafio_Capa_e_Espada
 
         public override void UsarItem(ItemMagico im)
         {
+            foreach (var item in ItemMagico collection)
+            {
 
+            }
         }
 
         public override void Exibir()

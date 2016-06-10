@@ -21,6 +21,7 @@ namespace Desafio_Capa_e_Espada
 
         List<Poder> poderes = new List<Poder>();
         List<Armamento> armamentos = new List<Armamento>();
+        List<ItemMagico> itensMagicos = new List<ItemMagico>();
         public int Id
         {
             get
@@ -140,35 +141,7 @@ namespace Desafio_Capa_e_Espada
         }
         
         public virtual void Atacar(ItemCombate ic)
-        {
-            if (ic.GetType().ToString().IndexOf("Guerreiro") >= 0)
-            {
-                foreach (var item in Armamentos)
-                {
-                    if (ic.Armamento == item)
-                    {
-                        if (guerreiro.PontosForca >= ic.Armamento.PontosForca)
-                        {
-                            guerreiro.PontosForca -= ic.Armamento.PontosForca;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                foreach (var item in Poderes)
-                {
-                    if (ic.Poder == item)
-                    {
-                        if (mago.PontosMagia >= ic.Poder.PontosMagia)
-                        {
-                            mago.PontosMagia -= ic.Poder.PontosMagia;
-                        }
-                    }
-                }
-            }
-
-            Console.WriteLine("O {0} está atacando com seu {1} causando {2} pontos de dano", this.nome, ic.Armamento, ic.PontosDano);
+        {            
         }
 
         public virtual void UsarItem(ItemMagico im)
