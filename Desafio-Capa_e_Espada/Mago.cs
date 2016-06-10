@@ -10,8 +10,9 @@ namespace Desafio_Capa_e_Espada
     {
         private int pontosMagia;
 
-        public Mago(int id, string nome, int nivel, int pontosVida, int pontosExperiencia, string alinhamento) : base(id, nome, nivel, pontosVida, pontosExperiencia, alinhamento)
+        public Mago(int id, string nome, int nivel, int pontosVida, int pontosExperiencia, int pontosMagia, string alinhamento) : base(id, nome, nivel, pontosVida, pontosExperiencia, alinhamento)
         {
+            this.pontosMagia = pontosMagia;
         }
 
         public int PontosMagia

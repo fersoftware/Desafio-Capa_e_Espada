@@ -51,8 +51,9 @@ namespace Desafio_Capa_e_Espada
             }
         }
 
-        public ItemCombate(int id, string nome) : base(id, nome)
+        public ItemCombate(int id, string nome, int pontosDano) : base(id, nome)
         {
+            this.pontosDano = pontosDano;
         }
     }
 }

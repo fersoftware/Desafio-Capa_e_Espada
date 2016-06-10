@@ -113,6 +113,11 @@ namespace Desafio_Capa_e_Espada
             }
         }
 
+        public void AddArmamento(Armamento armamento)
+        {
+            armamentos.Add(armamento);
+        }
+
         public List<Armamento> Armamentos
         {
             get

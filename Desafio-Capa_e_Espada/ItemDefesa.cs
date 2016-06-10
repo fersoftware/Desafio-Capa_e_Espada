@@ -10,8 +10,9 @@ namespace Desafio_Capa_e_Espada
     {
         private int pontosDefesa;
 
-        public ItemDefesa(int id, string nome) : base(id, nome)
+        public ItemDefesa(int id, string nome, int pontosDefesa) : base(id, nome)
         {
+            this.pontosDefesa = pontosDefesa;
         }
     }
 }
