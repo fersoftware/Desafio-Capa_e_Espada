@@ -38,12 +38,18 @@ namespace Desafio_Capa_e_Espada
                 mago.Poderes.Add(poder);
                 ItemDefesa itemdefesa = new ItemDefesa(1, "Manto", 12);
             }
-            else if (personagem == "Hank")
+            else if (personagem == "Conan")
             {
-                Guerreiro guerreiro = new Guerreiro(1, "Hank", 1, 40, 150, 20, "Cruzado");
-                Armamento armamento = new Armamento(1, "Arco Mágico", 5, 5);
+                Guerreiro guerreiro = new Guerreiro(1, "Conan", 1, 200, 1500, 50, "Benfeitor");
+                Armamento armamento = new Armamento(1, "Machado", 20, 20);
                 guerreiro.Armamentos.Add(armamento);
+                armamento = new Armamento(1, "Espada", 15, 17);
+                guerreiro.Armamentos.Add(armamento);
+                armamento = new Armamento(1, "Faca", 10, 8);
+                guerreiro.Armamentos.Add(armamento);
+
                 ItemDefesa itemdefesa = new ItemDefesa(1, "Armadura Couro", 15);
+                guerreiro.ItensDefesas.Add(itemdefesa);
 
             }
         }
